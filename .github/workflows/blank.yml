@@ -2,12 +2,11 @@ name: deploy-to-s3-example
 
 on: 
   push:
-    branches: 
-      - master
+    branches: [ master ]
 
 jobs: 
   build: 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: git clone
         uses: actions/checkout@v2
